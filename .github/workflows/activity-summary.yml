@@ -42,8 +42,8 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "Baby Manisha Sunkara"
+          git config --global user.email "babymaneesha@gmail.com"
           git add work-summary.md
           git commit -m "Update work summary: $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes to commit"
           git push
