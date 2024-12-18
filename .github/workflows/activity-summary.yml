@@ -17,6 +17,14 @@ jobs:
         env:
           PAT: ${{ secrets.PAT }}
         run: |
+          # Create or read the last updated timestamp
+          LAST_UPDATED_FILE=".last-updated.txt"
+          if [ -f $LAST_UPDATED_FILE ]; then
+            LAST_UPDATED=$(cat $LAST_UPDATED_FILE)
+          else
+            LAST_UPDATED="1970-01-01T00:00:00Z"
+          fi
+
           # Create a temporary file for new activities
           ACTIVITY_FILE="new-activity.md"
           echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > $ACTIVITY_FILE
@@ -26,15 +34,15 @@ jobs:
           # curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" > api-response.json
           # cat api-response.json
 
-          # Fetch events using curl and format with jq
+          # Fetch events and filter by timestamp
           curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" | \
-          jq -r '
+          jq -r --arg LAST_UPDATED "$LAST_UPDATED" '
             .[] |
-            select(.type == "PushEvent" or .type == "PullRequestEvent") |
+            select(.created_at > $LAST_UPDATED) | # Only include events after the last update
             if .type == "PushEvent" then
-              .repo.name as $repo_name | # Store the repository name from the parent context
+              .repo.name as $repo_name |
               .payload.commits[] |
-              select(.distinct == true) | # Only include distinct commits
+              select(.distinct == true) |
               "- **Commit:** \(.message // "No message provided") in \($repo_name) [↗](https://github.com/\($repo_name)/commit/\(.sha))"
             elif .type == "PullRequestEvent" then
               "- **Pull Request:** \(.payload.pull_request.title // "No title provided") in \(.repo.name // "Unknown repository") [🔗](\(.payload.pull_request.html_url))"
@@ -46,6 +54,9 @@ jobs:
             echo "No new activities to log. Exiting."
             exit 0
           fi
+
+          # Update the last updated timestamp
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > $LAST_UPDATED_FILE
 
       - name: Append New Activities to Work Log
         run: |
