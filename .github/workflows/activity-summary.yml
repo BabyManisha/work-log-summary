@@ -13,34 +13,24 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Download Last Updated Artifact
-        id: download-artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: last-updated
-        continue-on-error: true # Prevent the workflow from failing if the artifact is missing
-
-      - name: Create or Use Default Timestamp
-        run: |
-          # Use the downloaded artifact if available, or create a default timestamp file
-          LAST_UPDATED_FILE=".last-updated.txt"
-          if [ ! -f $LAST_UPDATED_FILE ]; then
-            echo "1970-01-01T00:00:00Z" > $LAST_UPDATED_FILE
-          fi
-
       - name: Fetch and Format Activity Data
         env:
           PAT: ${{ secrets.PAT }}
           DEBUG: "true"
           APPEND_MODE: "top" # Change to "bottom" if you want to append at the end
         run: |
-          # Read the last updated timestamp
-          LAST_UPDATED=$(cat .last-updated.txt)
+          # Create or read the last updated timestamp
+          LAST_UPDATED_FILE=".last-updated.txt"
+          if [ -f $LAST_UPDATED_FILE ]; then
+            LAST_UPDATED=$(cat $LAST_UPDATED_FILE)
+          else
+            LAST_UPDATED="1970-01-01T00:00:00Z"
+          fi
 
           # Create a temporary file for new activities
           ACTIVITY_FILE="new-activity.md"
           echo "-----" > $ACTIVITY_FILE # Add separator
-          echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > $ACTIVITY_FILE
+          echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" >> $ACTIVITY_FILE
           echo "" >> $ACTIVITY_FILE
 
           # Debugging: Fetch and print the raw API response if DEBUG is enabled
@@ -74,9 +64,9 @@ jobs:
           fi
 
           # Update the last updated timestamp
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > .last-updated.txt
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > $LAST_UPDATED_FILE
 
-       - name: Update Work Summary File
+      - name: Update Work Summary File
         run: |
           if [ "$APPEND_MODE" = "top" ]; then
             echo "Adding new content at the top of work-summary.md"
@@ -90,12 +80,6 @@ jobs:
         run: |
           git config --global user.name "Baby Manisha Sunkara"
           git config --global user.email "babymaneesha@gmail.com"
-          git add work-summary.md .last-updated.txt
+          git add work-summary.md
           git commit -m "Update work summary: $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes to commit"
           git push
-
-      - name: Upload Last Updated Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: last-updated
-          path: .last-updated.txt
