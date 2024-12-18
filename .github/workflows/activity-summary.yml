@@ -13,25 +13,29 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Fetch Activity Data
+      - name: Fetch and Format Activity Data
         env:
           PAT: ${{ secrets.PAT }}
         run: |
           # Create a temporary file for new activities
           ACTIVITY_FILE="new-activity.md"
           echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > $ACTIVITY_FILE
+          echo "" >> $ACTIVITY_FILE
 
-          # Fetch events using curl and PAT
+          # Fetch events using curl and format with jq
           curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" | \
-          jq '.[] | select(.type == "PushEvent" or .type == "PullRequestEvent") | 
-              if .type == "PushEvent" then 
-                .payload.commits[] | "Commit: \(.message) in \(.repository.name)" 
-              elif .type == "PullRequestEvent" then 
-                "Pull Request: \(.payload.pull_request.title) in \(.repo.name) (\(.payload.pull_request.html_url))" 
-              end' >> $ACTIVITY_FILE
+          jq -r '
+            .[] | 
+            select(.type == "PushEvent" or .type == "PullRequestEvent") |
+            if .type == "PushEvent" then 
+              .payload.commits[] | "- Commit: \(.message // "No message provided") in \(.repository.name // "Unknown repository")"
+            elif .type == "PullRequestEvent" then 
+              "- Pull Request: \(.payload.pull_request.title // "No title provided") in \(.repo.name // "Unknown repository") (\(.payload.pull_request.html_url))"
+            end
+          ' >> $ACTIVITY_FILE
 
           # Check if there are new activities
-          if [ $(wc -l < $ACTIVITY_FILE) -eq 1 ]; then
+          if [ $(wc -l < $ACTIVITY_FILE) -eq 2 ]; then
             echo "No new activities to log. Exiting."
             exit 0
           fi
