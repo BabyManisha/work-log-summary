@@ -32,12 +32,14 @@ jobs:
         env:
           PAT: ${{ secrets.PAT }}
           DEBUG: "true"
+          APPEND_MODE: "top" # Change to "bottom" if you want to append at the end
         run: |
           # Read the last updated timestamp
           LAST_UPDATED=$(cat .last-updated.txt)
 
           # Create a temporary file for new activities
           ACTIVITY_FILE="new-activity.md"
+          echo "-----" > $ACTIVITY_FILE # Add separator
           echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > $ACTIVITY_FILE
           echo "" >> $ACTIVITY_FILE
 
@@ -74,9 +76,15 @@ jobs:
           # Update the last updated timestamp
           date -u +"%Y-%m-%dT%H:%M:%SZ" > .last-updated.txt
 
-      - name: Append New Activities to Work Log
+       - name: Update Work Summary File
         run: |
-          cat new-activity.md >> work-summary.md
+          if [ "$APPEND_MODE" = "top" ]; then
+            echo "Adding new content at the top of work-summary.md"
+            cat new-activity.md work-summary.md > temp.md && mv temp.md work-summary.md
+          else
+            echo "Adding new content at the bottom of work-summary.md"
+            cat work-summary.md new-activity.md > temp.md && mv temp.md work-summary.md
+          fi
 
       - name: Commit and Push Changes
         run: |
