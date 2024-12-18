@@ -1,13 +1,13 @@
 # Work-Log-Summary
-This repository automatically logs and summarizes my GitHub commits and pull requests every 30 minutes. It provides a convenient way to track my recent activity and see what I've worked on throughout the day.
+This repository automatically logs and summarizes my GitHub commits and pull requests every day at 12AM. It provides a convenient way to track my recent activity and see what I've worked on throughout the day.
 
 ## Features
-- **Automated Updates:** The repository is updated every 30 minutes with a summary of recent commits and pull requests.
+- **Automated Updates:** The repository is updated every day at 12AM with a summary of recent commits and pull requests.
 - **Summary Log:** Each update includes a summary of the commit messages and pull request titles.
 - **Easy Tracking:** Quickly review your recent activity without navigating through multiple repositories.
 
 ## How It Works
-A GitHub Action workflow runs every 30 minutes to:
+A GitHub Action workflow runs every day 12AM to:
 
 1. Fetch recent commits and pull requests from your GitHub profile.
 2. Generate a summary of the activity.
@@ -53,7 +53,7 @@ To allow GitHub Actions to commit changes to this repository, configure the foll
 4. Save the changes.
 
 ### Step 4: View Updates
-You can monitor the activity summary by viewing the **work-summary.md** file, which is updated every 30 minutes
+You can monitor the activity summary by viewing the **work-summary.md** file, which is updated every day 12AM
 
 ----
 ### Example Output
