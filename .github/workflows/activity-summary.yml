@@ -17,7 +17,7 @@ jobs:
         env:
           PAT: ${{ secrets.PAT }}
           DEBUG: "true"
-          APPEND_MODE: "top" # Change to "bottom" if you want to append at the end
+          APPEND_MODE: "bottom" # Change to "top" or "bottom" if you want to append at the begining or end
         run: |
           # Create or read the last updated timestamp
           LAST_UPDATED_FILE=".last-updated.txt"
@@ -69,11 +69,11 @@ jobs:
       - name: Update Work Summary File
         run: |
           if [ "$APPEND_MODE" = "top" ]; then
-            echo "Adding new content at the bottom of work-summary.md"
-            cat work-summary.md new-activity.md > temp.md && mv temp.md work-summary.md
-          else
             echo "Adding new content at the top of work-summary.md"
             cat new-activity.md work-summary.md > temp.md && mv temp.md work-summary.md
+          else
+            echo "Adding new content at the bottom of work-summary.md"
+            cat work-summary.md new-activity.md > temp.md && mv temp.md work-summary.md
           fi
 
       - name: Commit and Push Changes
