@@ -22,7 +22,7 @@ jobs:
           echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > $ACTIVITY_FILE
           echo "" >> $ACTIVITY_FILE
 
-          $ FETCH DATA
+          # Fetch and Print Data
           curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" > api-response.json
           cat api-response.json
 
