@@ -64,22 +64,22 @@ jobs:
           fi
 
           # Update the last updated timestamp
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > $LAST_UPDATED_FILE
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > .last-updated.txt
 
       - name: Update Work Summary File
         run: |
           if [ "$APPEND_MODE" = "top" ]; then
-            echo "Adding new content at the top of work-summary.md"
-            cat new-activity.md work-summary.md > temp.md && mv temp.md work-summary.md
-          else
             echo "Adding new content at the bottom of work-summary.md"
             cat work-summary.md new-activity.md > temp.md && mv temp.md work-summary.md
+          else
+            echo "Adding new content at the top of work-summary.md"
+            cat new-activity.md work-summary.md > temp.md && mv temp.md work-summary.md
           fi
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "Baby Manisha Sunkara"
           git config --global user.email "babymaneesha@gmail.com"
-          git add work-summary.md
+          git add work-summary.md .last-updated.txt
           git commit -m "Update work summary: $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes to commit"
           git push
