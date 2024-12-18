@@ -29,12 +29,12 @@ jobs:
           # Fetch events using curl and format with jq
           curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" | \
           jq -r '
-            .[] | 
+            .[] |
             select(.type == "PushEvent" or .type == "PullRequestEvent") |
-            if .type == "PushEvent" then 
-              .payload.commits[] | "- **Commit:**Commit: \(.message // "No message provided") in \(.repo.name // "Unknown repository")"
-            elif .type == "PullRequestEvent" then 
-              "- **Pull Request:** \(.payload.pull_request.title // "No title provided") in \(.repo.name // "Unknown repository") (\(.payload.pull_request.html_url))"
+            if .type == "PushEvent" then
+              .payload.commits[] | "- **Commit:** \(.message // "No message provided") in \(.repo.name // "Unknown repository") [↗️](\(.url))"
+            elif .type == "PullRequestEvent" then
+              "- **Pull Request:** \(.payload.pull_request.title // "No title provided") in \(.repo.name // "Unknown repository") [🔗](\(.payload.pull_request.html_url))"
             end
           ' >> $ACTIVITY_FILE
 
