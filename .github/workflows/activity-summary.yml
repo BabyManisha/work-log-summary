@@ -15,14 +15,14 @@ jobs:
 
       - name: Fetch Activity Data
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAT: ${{ secrets.PAT }}
         run: |
           # Create a temporary file for new activities
           ACTIVITY_FILE="new-activity.md"
           echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > $ACTIVITY_FILE
 
-          # Fetch events using curl
-          curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/users/${{ github.actor }}/events" | \
+          # Fetch events using curl and PAT
+          curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" | \
           jq '.[] | select(.type == "PushEvent" or .type == "PullRequestEvent") | 
               if .type == "PushEvent" then 
                 .payload.commits[] | "Commit: \(.message) in \(.repository.name)" 
