@@ -28,10 +28,10 @@ jobs:
             .[] |
             select(.type == "PushEvent" or .type == "PullRequestEvent") |
             if .type == "PushEvent" then
+              .repo.name as $repo_name | # Store the repository name from the parent context
               .payload.commits[] |
               select(.distinct == true) | # Only include distinct commits
-              "- **Commit:** \(.message // "No message provided") in \(.repo.name) [↗](https://github.com/\(.repo.name)/commit/\(.sha))" |
-              gsub("\\(.repo.name)"; input.parent.repo.name)
+              "- **Commit:** \(.message // "No message provided") in \($repo_name) [↗](https://github.com/\($repo_name)/commit/\(.sha))"
             elif .type == "PullRequestEvent" then
               "- **Pull Request:** \(.payload.pull_request.title // "No title provided") in \(.repo.name // "Unknown repository") [🔗](\(.payload.pull_request.html_url))"
             end
