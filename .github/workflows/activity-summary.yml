@@ -16,6 +16,7 @@ jobs:
       - name: Fetch and Format Activity Data
         env:
           PAT: ${{ secrets.PAT }}
+          DEBUG: "true"           # Enable debugging by setting this to "true"
         run: |
           # Create or read the last updated timestamp
           LAST_UPDATED_FILE=".last-updated.txt"
@@ -30,19 +31,24 @@ jobs:
           echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > $ACTIVITY_FILE
           echo "" >> $ACTIVITY_FILE
 
-          # Fetch and Print Data - Uncomment below lines for debugging purposes
-          # curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" > api-response.json
-          # cat api-response.json
+          # Debugging: Fetch and print the raw API response if DEBUG is enabled
+          if [ "$DEBUG" = "true" ]; then
+            echo "Fetching API response for debugging..."
+            curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" > api-response.json
+            echo "API response saved to api-response.json"
+            echo "Preview of API response:"
+            head -n 20 api-response.json # Display first 20 lines of the response
+          fi
 
           # Fetch events and filter by timestamp
           curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" | \
           jq -r --arg LAST_UPDATED "$LAST_UPDATED" '
             .[] |
-            select(.created_at > $LAST_UPDATED) | # Only include events after the last update
+            select(.created_at > $LAST_UPDATED and (.type == "PushEvent" or .type == "PullRequestEvent")) | # Only include events after the last update
             if .type == "PushEvent" then
-              .repo.name as $repo_name |
+              .repo.name as $repo_name | # Store the repository name from the parent context
               .payload.commits[] |
-              select(.distinct == true) |
+              select(.distinct == true) | # Only include distinct commits
               "- **Commit:** \(.message // "No message provided") in \($repo_name) [↗](https://github.com/\($repo_name)/commit/\(.sha))"
             elif .type == "PullRequestEvent" then
               "- **Pull Request:** \(.payload.pull_request.title // "No title provided") in \(.repo.name // "Unknown repository") [🔗](\(.payload.pull_request.html_url))"
@@ -57,6 +63,40 @@ jobs:
 
           # Update the last updated timestamp
           date -u +"%Y-%m-%dT%H:%M:%SZ" > $LAST_UPDATED_FILE
+
+      # - name: Fetch and Format Activity Data
+      #   env:
+      #     PAT: ${{ secrets.PAT }}
+      #   run: |
+      #     # Create a temporary file for new activities
+      #     ACTIVITY_FILE="new-activity.md"
+      #     echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > $ACTIVITY_FILE
+      #     echo "" >> $ACTIVITY_FILE
+
+      #     # Fetch and Print Data - Uncomment below lines for debugging purposes
+      #     # curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" > api-response.json
+      #     # cat api-response.json
+
+      #     # Fetch events using curl and format with jq
+      #     curl -s -H "Authorization: token $PAT" "https://api.github.com/users/${{ github.actor }}/events" | \
+      #     jq -r '
+      #       .[] |
+      #       select(.type == "PushEvent" or .type == "PullRequestEvent") |
+      #       if .type == "PushEvent" then
+      #         .repo.name as $repo_name | # Store the repository name from the parent context
+      #         .payload.commits[] |
+      #         select(.distinct == true) | # Only include distinct commits
+      #         "- **Commit:** \(.message // "No message provided") in \($repo_name) [↗](https://github.com/\($repo_name)/commit/\(.sha))"
+      #       elif .type == "PullRequestEvent" then
+      #         "- **Pull Request:** \(.payload.pull_request.title // "No title provided") in \(.repo.name // "Unknown repository") [🔗](\(.payload.pull_request.html_url))"
+      #       end
+      #     ' >> $ACTIVITY_FILE
+
+      #     # Check if there are new activities
+      #     if [ $(wc -l < $ACTIVITY_FILE) -eq 2 ]; then
+      #       echo "No new activities to log. Exiting."
+      #       exit 0
+      #     fi
 
       - name: Append New Activities to Work Log
         run: |
