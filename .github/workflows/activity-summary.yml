@@ -3,7 +3,7 @@ name: Update Work Summary
 on:
   schedule:
     - cron: "*/30 * * * *" # Runs every 30 minutes
-  workflow_dispatch: # Allows manual triggering of the workflow
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   update-summary:
@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
+      - name: Install GitHub CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gh
 
       - name: Fetch Activity Data
         env:
