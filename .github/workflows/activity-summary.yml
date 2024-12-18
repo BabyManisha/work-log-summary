@@ -17,7 +17,7 @@ jobs:
         env:
           PAT: ${{ secrets.PAT }}
           DEBUG: "true"
-          APPEND_MODE: "bottom" # Change to "top" or "bottom" if you want to append at the begining or end
+          APPEND_MODE: "top" # Change to "top" or "bottom" if you want to append at the begining or end
         run: |
           # Create or read the last updated timestamp
           LAST_UPDATED_FILE=".last-updated.txt"
