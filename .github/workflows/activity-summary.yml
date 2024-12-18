@@ -1,0 +1,52 @@
+name: Update Work Summary
+
+on:
+  schedule:
+    - cron: "*/3 * * * *" # Runs every 30 minutes
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  update-summary:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Fetch Activity Data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Create a temporary file for new activities
+          ACTIVITY_FILE="new-activity.md"
+          echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" > $ACTIVITY_FILE
+
+          # Fetch events using GitHub CLI
+          gh api '/user/events' --paginate \
+            --header "Authorization: token $GITHUB_TOKEN" \
+            --jq '
+              .[] | select(.type == "PushEvent" or .type == "PullRequestEvent") | 
+              if .type == "PushEvent" then 
+                .payload.commits[] | "Commit: \(.message) in \(.repository.name)" 
+              elif .type == "PullRequestEvent" then 
+                "Pull Request: \(.payload.pull_request.title) in \(.repo.name) (\(.payload.pull_request.html_url))" 
+              end
+            ' >> $ACTIVITY_FILE
+
+          # Check if there are new activities
+          if [ $(wc -l < $ACTIVITY_FILE) -eq 1 ]; then
+            echo "No new activities to log. Exiting."
+            exit 0
+          fi
+
+      - name: Append New Activities to Work Log
+        run: |
+          cat new-activity.md >> work-summary.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "actions@github.com"
+          git add work-summary.md
+          git commit -m "Update work summary: $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes to commit"
+          git push
