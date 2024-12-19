@@ -29,7 +29,6 @@ jobs:
 
           # Create a temporary file for new activities
           ACTIVITY_FILE="new-activity.md"
-          echo "-----" > $ACTIVITY_FILE # Add separator
           echo "### Work Summary - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" >> $ACTIVITY_FILE
           echo "" >> $ACTIVITY_FILE
 
@@ -62,6 +61,9 @@ jobs:
             echo "No new activities to log. Exiting."
             exit 0
           fi
+
+          # Adding a separator at the end
+          echo "-----" > $ACTIVITY_FILE # Add separator
 
           # Update the last updated timestamp
           date -u +"%Y-%m-%dT%H:%M:%SZ" > .last-updated.txt
