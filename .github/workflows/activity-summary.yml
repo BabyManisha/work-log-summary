@@ -63,7 +63,7 @@ jobs:
           fi
 
           # Adding a separator at the end
-          echo "-----" > $ACTIVITY_FILE # Add separator
+          echo "-----" >> $ACTIVITY_FILE # Add separator
 
           # Update the last updated timestamp
           date -u +"%Y-%m-%dT%H:%M:%SZ" > .last-updated.txt
