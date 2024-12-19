@@ -58,7 +58,7 @@ jobs:
 
           # Check if there are new activities
           if [ $(wc -l < $ACTIVITY_FILE) -eq 2 ]; then
-            echo "No new activities to log - Happy Coding!! 🏖️👩🏻‍💻" >> $ACTIVITY_FILE
+            echo "* No new activities to log - Happy Coding!! 🏖️👩🏻‍💻" >> $ACTIVITY_FILE
           fi
 
           # Adding a separator at the end
