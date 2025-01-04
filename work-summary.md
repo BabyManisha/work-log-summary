@@ -1,3 +1,18 @@
+### Work Summary - 2025-01-04 00:09:16 UTC
+
+- **Commit:** Added active_geomarket and sexual_orientation in ruffalo-noel-levitz/ai-etl-slate-lambda [↗](https://github.com/ruffalo-noel-levitz/ai-etl-slate-lambda/commit/a774f0301a8951228a4199b765cee71f29684611)
+- **Commit:** removed config update in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/71db3566dd79c41021832c33f4f1c907c07eb9c2)
+- **Commit:** fiinal1 in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/16a81f056e7f923ffcd14c861390d39ee8021e45)
+- **Commit:** debugging configmap in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/c85d63d400a4188a2dcf2478ff1192dc336e9827)
+- **Commit:** final debug in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/e5432c2f376289f6d2d47d5497420b706daa2b40)
+- **Commit:** added debuggers in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/24d61d2d9ed37a055ec9eef5f7c2039f88e045b2)
+- **Commit:** added kub deb in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/a946a0d1d2820f0f11178413ae8294ac4bbeab97)
+- **Commit:** added debugere for cicd in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/59d6a28a3c12357033669fdc314eb3d62a1362d1)
+- **Commit:** removed role in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/7749c931afc8c724ae707bca31b27c1bff9ceada)
+- **Commit:** build changes check in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/8b75051c546e11bb52b7fdc309bd3d5149cb6a45)
+- **Commit:** checking in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/6e2494da1fb620745cb8c188135e112179df4759)
+- **Commit:** sm action test in ruffalo-noel-levitz/ai-rnl-compass-server [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-compass-server/commit/93aac4b184be7f7d2ab96424130e67b0b7a2566d)
+-----
 ### Work Summary - 2025-01-03 00:09:40 UTC
 
 - **Commit:** Update release.yml in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/commit/4f5e732e92ceeb321a3a6ea5e9eed3faa0652fde)
