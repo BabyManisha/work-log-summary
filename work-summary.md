@@ -1,3 +1,30 @@
+### Work Summary - 2025-06-25 00:11:19 UTC
+
+- **Commit:** Fix migration policy conflict error in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/e60f215e91a41804ef8e19b92f047e3f007b3c7d)
+- **Commit:** Fix OAuth user creation database error in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/f6e59b91a5f6156d7237afad49372a379c593266)
+- **Commit:** Fix Supabase billing error handling in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/39daf490647870a2d851a78b55f710547a8ee850)
+- **Commit:** Fix billing page errors and Stripe integration in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/1736a6522abfda87dcf895adb196deef48e104c5)
+- **Commit:** Fix billing and subscription errors in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/5a8cff535947078140ce1ed7356ecb12b2f8f8c9)
+- **Commit:** Fix LoadingSpinner import in Billing page in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/1420d2f153254420f6419ab8d0367da4f4e424cc)
+- **Commit:** Fix missing exports in billing.ts in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/d9fca5debff747590035ce6d289ec80ea3c11d87)
+- **Commit:** Improve Stripe Error Handling for Configuration Issues in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/e050bd5d320dc9adc5e7505a44958c4898a96c9d)
+- **Commit:** Fix Stripe Price ID placeholders in plans table in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/dfbbb94d3e36df02d77957c5e78880716dc62be9)
+- **Commit:** Fixed Campaign Bundles Migration in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/5d311c7627f44eee85369900c763e9b31807adf1)
+- **Commit:** Campaign Bundles Billing System in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/840218acf2e9d1083f72b901858fd9e29d798279)
+- **Commit:** Complete Stripe Billing Integration in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/9afcf0fb4b05bca7a2d591b6147a70c77f3a607b)
+- **Commit:** Fix user profile creation race condition in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/b1887559fe7be1412372483efcb499309ea114a3)
+- **Commit:** Add Backend API Support for Profile/Settings and Testimonial Export in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/e825fdb4ac2e7af491ffafa38aa60af846aab844)
+- **Commit:** Create User Profile and Settings Pages in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/bc0f860de18728ee830e8c3274d23e2cf7e6b730)
+- **Commit:** Update HomePage with proper authentication flow and link generation in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/fdf44bf135b8296bdde9a78096ad91ed3015c157)
+- **Commit:** Remove delete option and add pagination to individual dashboard in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/33acca400805d39172f5a2cf8ea96a872f49e5fa)
+- **Commit:** Fix UI issues and form preview functionality in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/c5ba11d056cf35e384dddb02c871c4edddfaa829)
+- **Commit:** Add database and API support for collection link settings in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/8b8e007ee67bf5c68877a5ab5d1a4dd9f52882b8)
+- **Commit:** Fix active/inactive functionality and add collection link settings page in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/63454ec50eb48992db930ff00fe5f9dbb8b6e52f)
+- **Commit:** Add individual collection link dashboard navigation in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/f52122fcf4e8a5c22d267349b656598f9b3d51a2)
+- **Commit:** Fix views and submissions display on dashboard in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/f14efc718d77734347ee1d552081a8ad4798655f)
+- **Commit:** Fix calculateLinkStats initialization error in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/39be3f620f45f8b7d316c8752a328051bd5d99b7)
+- **Commit:** Enhanced Dashboard with Pagination, Search, and Interactive Design in BabyManisha/TestiFlow [↗](https://github.com/BabyManisha/TestiFlow/commit/2f211b1fa148e05aeb4122843daca8974beec62c)
+-----
 ### Work Summary - 2025-06-24 00:11:13 UTC
 
 * No new activities to log - Happy Coding!! 🏖️👩🏻‍💻
