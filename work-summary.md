@@ -1,3 +1,16 @@
+### Work Summary - 2025-06-30 00:11:59 UTC
+
+- **Commit:** Fix Supabase profile query error in BabyManisha/Neighborly [↗](https://github.com/BabyManisha/Neighborly/commit/7eb16e108a1f0ec6a3a869cc556c26296f766edc)
+- **Commit:** Complete Rating and Review System in BabyManisha/Neighborly [↗](https://github.com/BabyManisha/Neighborly/commit/ba5d722930513f5ae47197d88d97a3518e0b7aab)
+- **Commit:** Fix expo-secure-store version compatibility in BabyManisha/neighborly-app [↗](https://github.com/BabyManisha/neighborly-app/commit/6248ce1bfb9fa98f7e035598755fd39c66628aba)
+- **Commit:** Fix package.json dependencies in BabyManisha/neighborly-app [↗](https://github.com/BabyManisha/neighborly-app/commit/d7938bf36fe482806cda7be4ff6f5436b86e1012)
+- **Commit:** Fix expo-secure-store version compatibility in BabyManisha/neighborly-app [↗](https://github.com/BabyManisha/neighborly-app/commit/272944fba76ef65ef62556fcd9a063b4dc692baf)
+- **Commit:** Fix Expo package compatibility and CLI installation in BabyManisha/neighborly-app [↗](https://github.com/BabyManisha/neighborly-app/commit/3a62ea11d402187743210c39183f18de22ae1999)
+- **Commit:** Start repository in BabyManisha/neighborly-app [↗](https://github.com/BabyManisha/neighborly-app/commit/a82f4a306717a84e8dfdaf688194853e2f5ba215)
+- **Commit:** Start repository in BabyManisha/neighborly-app [↗](https://github.com/BabyManisha/neighborly-app/commit/8a4bb8ceaedc55c51347965d68163b9fef186bf3)
+- **Commit:** Start repository in BabyManisha/Neighborly [↗](https://github.com/BabyManisha/Neighborly/commit/9abe896190507c2e2bf0c4e9ff4c06e782975419)
+- **Commit:** Start repository in BabyManisha/Neighborly [↗](https://github.com/BabyManisha/Neighborly/commit/1874c0c514b65f8e2f4fd58269c18c84b88147d9)
+-----
 ### Work Summary - 2025-06-29 00:12:43 UTC
 
 * No new activities to log - Happy Coding!! 🏖️👩🏻‍💻
