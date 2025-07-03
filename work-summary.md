@@ -1,3 +1,42 @@
+### Work Summary - 2025-07-03 00:11:30 UTC
+
+- **Commit:** Merge pull request #25 from ruffalo-noel-levitz/EDGE-669
+
+EDGE-669 RNL Insights: Replace /organization/domain endpoint with /ac… in ruffalo-noel-levitz/ai-rnl-insights-fe [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-insights-fe/commit/e996b8487e267b95e2e657150b8ac4820c81575f)
+- **Pull Request:** EDGE-669 RNL Insights: Replace /organization/domain endpoint with /ac… in ruffalo-noel-levitz/ai-rnl-insights-fe [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-insights-fe/pull/25)
+- **Commit:** Merge pull request #173 from ruffalo-noel-levitz/EDGE-670
+
+EDGE-670 RNL Answers: Replace /organization/domain endpoint with /acc… in ruffalo-noel-levitz/ai-rnl-answers-fe [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/commit/a770c72009facf0e1036c9377f4928f30b22a37e)
+- **Pull Request:** EDGE-670 RNL Answers: Replace /organization/domain endpoint with /acc… in ruffalo-noel-levitz/ai-rnl-answers-fe [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/pull/173)
+- **Commit:** Merge pull request #52 from ruffalo-noel-levitz/EDGE-668
+
+EDGE-668 RNL Launchpad: Replace /organization/domain endpoint with /a… in ruffalo-noel-levitz/ai-rnl-edge-launchpad [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-launchpad/commit/94a0913f3cc744839481d098f777b07d917b849f)
+- **Pull Request:** EDGE-668 RNL Launchpad: Replace /organization/domain endpoint with /a… in ruffalo-noel-levitz/ai-rnl-edge-launchpad [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-launchpad/pull/52)
+- **Commit:** Merge pull request #181 from ruffalo-noel-levitz/EDGE-663
+
+EDGE-663 RNL Management UI: Add UI support for Org user with allowedP… in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/commit/64ab2c5b725265e7c895b8d24239e10fcc212008)
+- **Pull Request:** EDGE-663 RNL Management UI: Add UI support for Org user with allowedP… in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/pull/181)
+- **Commit:** Merge pull request #190 from ruffalo-noel-levitz/EDGE-662
+
+EDGE-662 & EDGE- 667 in ruffalo-noel-levitz/ai-rnl-edge-api [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/commit/a0d10158a9dec2107551dc2e8cdf991a30f80d67)
+- **Pull Request:** EDGE-662 & EDGE- 667  in ruffalo-noel-levitz/ai-rnl-edge-api [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/pull/190)
+- **Pull Request:** EDGE-670 RNL Answers: Replace /organization/domain endpoint with /acc… in ruffalo-noel-levitz/ai-rnl-answers-fe [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/pull/173)
+- **Pull Request:** EDGE-669 RNL Insights: Replace /organization/domain endpoint with /ac… in ruffalo-noel-levitz/ai-rnl-insights-fe [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-insights-fe/pull/25)
+- **Pull Request:** EDGE-668 RNL Launchpad: Replace /organization/domain endpoint with /a… in ruffalo-noel-levitz/ai-rnl-edge-launchpad [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-launchpad/pull/52)
+- **Pull Request:** EDGE-663 RNL Management UI: Add UI support for Org user with allowedP… in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/pull/181)
+- **Pull Request:** EDGE-662 & EDGE- 667  in ruffalo-noel-levitz/ai-rnl-edge-api [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/pull/190)
+- **Commit:** EDGE-667 RNL EDGE: Create a new /account/org endpoint to return only user accessible product instances in ruffalo-noel-levitz/ai-rnl-edge-api [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/commit/57b39e7e51a6c896b522a12eeca0419b984c04e8)
+- **Commit:** Merge pull request #180 from ruffalo-noel-levitz/EDGE-660
+
+EDGE-660 Include product ID as part of product configuration in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/commit/ed1eb52c5cc884865c1841df6662110fd0734f66)
+- **Pull Request:** EDGE-660 Include product ID as part of product configuration in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/pull/180)
+- **Commit:** Merge pull request #189 from ruffalo-noel-levitz/EDGE-661
+
+EDGE-661 Added migration script to include product id as part of prod… in ruffalo-noel-levitz/ai-rnl-edge-api [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/commit/8b58ee27500c77823c16c1c26849682242ffe50c)
+- **Pull Request:** EDGE-661 Added migration script to include product id as part of prod… in ruffalo-noel-levitz/ai-rnl-edge-api [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/pull/189)
+- **Pull Request:** EDGE-661 Added migration script to include product id as part of prod… in ruffalo-noel-levitz/ai-rnl-edge-api [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/pull/189)
+- **Pull Request:** EDGE-660 Include product ID as part of product configuration in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/pull/180)
+-----
 ### Work Summary - 2025-07-02 00:11:05 UTC
 
 * No new activities to log - Happy Coding!! 🏖️👩🏻‍💻
