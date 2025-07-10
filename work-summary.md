@@ -1,3 +1,43 @@
+### Work Summary - 2025-07-10 00:11:18 UTC
+
+- **Commit:** Merge pull request #4 from BabyManisha/v2
+
+Fix orders/subscription undefined error in useUsage hook in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/7853d6ff202db137c718acca079ac7054d7bc9d6)
+- **Pull Request:** Fix orders/subscription undefined error in useUsage hook in BabyManisha/leadCraftAI [🔗](https://github.com/BabyManisha/leadCraftAI/pull/4)
+- **Pull Request:** Fix orders/subscription undefined error in useUsage hook in BabyManisha/leadCraftAI [🔗](https://github.com/BabyManisha/leadCraftAI/pull/4)
+- **Commit:** Fix orders/subscription undefined error in useUsage hook in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/6b6a8a415a769b5f68a21aa79775b7662457be3e)
+- **Commit:** Merge pull request #3 from BabyManisha/v2
+
+V2 in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/79037f5e1f976a8af11f7dbe02a7a769de24573b)
+- **Pull Request:** V2 in BabyManisha/leadCraftAI [🔗](https://github.com/BabyManisha/leadCraftAI/pull/3)
+- **Pull Request:** V2 in BabyManisha/leadCraftAI [🔗](https://github.com/BabyManisha/leadCraftAI/pull/3)
+- **Commit:** Implement credit-based system for multiple $5 purchases in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/aea24852d816c39e160c71d86bf32de095d574b4)
+- **Commit:** Fix pricing to show 25 requests for $5, not unlimited in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/7fe050cb146e4886ff352cb4fcf7c15933e3c070)
+- **Commit:** Merge pull request #2 from BabyManisha/v2
+
+Create LeadCraft AI Landing Page in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/ffb43845577268fd1e85824e4164f35a0b4c0081)
+- **Pull Request:** Create LeadCraft AI Landing Page in BabyManisha/leadCraftAI [🔗](https://github.com/BabyManisha/leadCraftAI/pull/2)
+- **Pull Request:** Create LeadCraft AI Landing Page in BabyManisha/leadCraftAI [🔗](https://github.com/BabyManisha/leadCraftAI/pull/2)
+- **Commit:** Create LeadCraft AI Landing Page in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/460a1b204d324c375f826561d2f5cc91fc868ae9)
+- **Commit:** Merge pull request #1 from BabyManisha/v2
+
+V2 in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/e15216af13378753b9aa38fb6c7c5965d6fccdcf)
+- **Pull Request:** V2 in BabyManisha/leadCraftAI [🔗](https://github.com/BabyManisha/leadCraftAI/pull/1)
+- **Pull Request:** V2 in BabyManisha/leadCraftAI [🔗](https://github.com/BabyManisha/leadCraftAI/pull/1)
+- **Commit:** Fix JSON parsing error in generate-messages function in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/16fcc09328e6faf05695c93a853f0d0d0e96b872)
+- **Commit:** Implement Chaining Mechanism for Message Generation in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/db9577dbbfdcff66855aa3e5c7ffdd360db8ffc8)
+- **Commit:** Move OpenAI integration to secure Edge Function in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/33cdee87b14c0e48b49e2755e2f21f48e3e74da3)
+- **Commit:** Fix unlimited access showing after cancelled Stripe transactions in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/2f27127fd22fe26f7d63e78069f54206a1d27c83)
+- **Commit:** Fix JSX structure error in MainApp component in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/935d301afc012a4bc21ab689abbb2af82f743d97)
+- **Commit:** Fix logo, layout width, and usage tracking in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/c5b7890f1f70b0b2e47de8c713ded7b09df6e81a)
+- **Commit:** Added logo copy.png in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/20cd2d2f697b09fd51cd61ab1a475c57978d57e2)
+- **Commit:** Updated useUsage.ts in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/a5cbfa337cf94bd04d2e967d2af87a4fd429ba39)
+- **Commit:** Fix user usage query to handle multiple records in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/55744ef7d3007f051bd039f1ce2f6a370b62dbc4)
+- **Commit:** Fix user usage query to handle multiple records in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/e4ca2cec6903e36492331757c8fe12911edb82d2)
+- **Commit:** Added logo.png in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/250fbe87bccee85d98c0f57db48fd62ecef9608f)
+- **Commit:** Create tabbed message display with analysis and email preview in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/39174b53594cbbc99e660951d86cc1b233a812ba)
+- **Commit:** Fix authentication UI and improve message display in BabyManisha/leadCraftAI [↗](https://github.com/BabyManisha/leadCraftAI/commit/5c7a800fe0360456d5313fa23f9d99b808f6aa38)
+-----
 ### Work Summary - 2025-07-09 00:11:24 UTC
 
 * No new activities to log - Happy Coding!! 🏖️👩🏻‍💻
