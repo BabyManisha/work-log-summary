@@ -1,3 +1,58 @@
+### Work Summary - 2025-10-03 00:09:55 UTC
+
+- **Commit:** Merge pull request #238 from ruffalo-noel-levitz/dev
+
+Latest dev to QA in ruffalo-noel-levitz/ai-rnl-answers-fe [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/commit/233be807c8b000d685769a512bfba9601a7451bc)
+- **Pull Request:** Latest dev to QA in ruffalo-noel-levitz/ai-rnl-answers-fe [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/pull/238)
+- **Pull Request:** Latest dev to QA in ruffalo-noel-levitz/ai-rnl-answers-fe [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/pull/238)
+- **Commit:** Merge pull request #237 from ruffalo-noel-levitz/feature/EDGE-892
+
+incomplete json handle in ruffalo-noel-levitz/ai-rnl-answers-fe [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/commit/6a93cc21de29a4682e9b3143904909d44d33418d)
+- **Pull Request:** incomplete json handle in ruffalo-noel-levitz/ai-rnl-answers-fe [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/pull/237)
+- **Pull Request:** incomplete json handle in ruffalo-noel-levitz/ai-rnl-answers-fe [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/pull/237)
+- **Commit:** Merge pull request #244 from ruffalo-noel-levitz/dev
+
+Latest dev to QA in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/commit/0893bdd90271f07bb609d767b2d8e3ec1dc6b23a)
+- **Pull Request:** Latest dev to QA in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/pull/244)
+- **Pull Request:** Latest dev to QA in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/pull/244)
+- **Commit:** Merge pull request #241 from ruffalo-noel-levitz/bug/EDGE-835-sidebar-alignment
+
+[EDGE-835] Fixed the sidebar alignment issue in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/commit/a8884b3753cc645c5887b82d41eafaf340fc6225)
+- **Pull Request:** [EDGE-835] Fixed the sidebar alignment issue in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/pull/241)
+- **Commit:** Merge pull request #240 from ruffalo-noel-levitz/dev
+
+[EDGE-888] - added count of org on org view in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/commit/5af7ad37e15ae494ae66b22b4c34442cb3cd2661)
+- **Pull Request:** [EDGE-888] - added count of org on org view in ruffalo-noel-levitz/ai-rnl-edge-manager-ui [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-manager-ui/pull/240)
+- **Commit:** Merge pull request #92 from ruffalo-noel-levitz/dev
+
+Latest dev to QA in ruffalo-noel-levitz/ai-rnl-edge-launchpad [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-launchpad/commit/07743089e51734919993310807f579d9228bf072)
+- **Pull Request:** Latest dev to QA in ruffalo-noel-levitz/ai-rnl-edge-launchpad [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-launchpad/pull/92)
+- **Pull Request:** Latest dev to QA in ruffalo-noel-levitz/ai-rnl-edge-launchpad [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-launchpad/pull/92)
+- **Commit:** Merge pull request #88 from ruffalo-noel-levitz/bug/EDGE-714
+
+[EDGE-714] Fixed the launchpad dashboard to show all product in cards with proper color which are configured in ruffalo-noel-levitz/ai-rnl-edge-launchpad [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-launchpad/commit/cb7946cb977ef5e72bfa90eeea4d92ce343a62ff)
+- **Pull Request:** [EDGE-714] Fixed the launchpad dashboard to show all product in cards with proper color which are configured in ruffalo-noel-levitz/ai-rnl-edge-launchpad [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-launchpad/pull/88)
+- **Commit:** Merge pull request #231 from ruffalo-noel-levitz/dev
+
+[EDGE-884] : chat interface scroll bug in ruffalo-noel-levitz/ai-rnl-answers-fe [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/commit/e4ffee547b45b6ff6042f3e40d50bb1bce7197c4)
+- **Pull Request:** [EDGE-884] : chat interface scroll bug in ruffalo-noel-levitz/ai-rnl-answers-fe [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/pull/231)
+- **Commit:** Merge pull request #316 from ruffalo-noel-levitz/dev
+
+Latest dev to QA in ruffalo-noel-levitz/ai-rnl-edge-api [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/commit/0ab277a48316e33137acd8854a3de70c9456edbc)
+- **Pull Request:** Latest dev to QA in ruffalo-noel-levitz/ai-rnl-edge-api [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/pull/316)
+- **Pull Request:** Latest dev to QA in ruffalo-noel-levitz/ai-rnl-edge-api [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/pull/316)
+- **Commit:** Merge pull request #315 from ruffalo-noel-levitz/feature/EDGE-891
+
+[EDGE-891] Implement streaming proxy for Doubleword API responses in ruffalo-noel-levitz/ai-rnl-edge-api [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/commit/8d7fdd9413843f08169d25261f63e538b7c348ea)
+- **Pull Request:** [EDGE-891] Implement streaming proxy for Doubleword API responses in ruffalo-noel-levitz/ai-rnl-edge-api [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-edge-api/pull/315)
+- **Commit:** Merge pull request #236 from ruffalo-noel-levitz/feature/streaming-test
+
+[EDGE-892] [EDGE-893] Implement real-time streaming responses in chat interface in ruffalo-noel-levitz/ai-rnl-answers-fe [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/commit/e52a07ded5b39d55296630d8dd40bc8e139d1322)
+- **Pull Request:** [EDGE-892] [EDGE-893] Implement real-time streaming responses in chat interface in ruffalo-noel-levitz/ai-rnl-answers-fe [🔗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/pull/236)
+- **Commit:** Merge pull request #233 from ruffalo-noel-levitz/featue/EDGE-884-bug-fix
+
+[EDGE-733][EDGE-885] - reusable tooltip directive in ruffalo-noel-levitz/ai-rnl-answers-fe [↗](https://github.com/ruffalo-noel-levitz/ai-rnl-answers-fe/commit/5d10fff660aa208a03b2815838fb24e1052ab904)
+-----
 ### Work Summary - 2025-10-02 00:09:39 UTC
 
 * No new activities to log - Happy Coding!! 🏖️👩🏻‍💻
